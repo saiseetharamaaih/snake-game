@@ -1,0 +1,122 @@
+ <!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <title>canvas</title>
+
+        <meta name="veiwport" content="width:device-width">
+        <meta charset="UTF-8">
+
+        
+             
+        <script>
+           
+            
+        </script>
+        <style >
+            body{
+                margin:0px;
+                background: #559977;
+            }
+            canvas{
+                opacity: 0.8;
+                background: #222222;
+                border: 1px solid black; 
+                position: fixed;
+                top: 0px;
+                left: 0px;
+                display: inline-block;
+                margin: 100px;
+                z-index: -1;
+
+
+            }
+            #scoreboard{
+              position: fixed;
+              right: 5px;
+              background: #222222;
+              opacity: 0.6;
+              padding: 20px 0px;
+              font: arial;
+              font-weight: bold;
+              color: lightgrey;
+              top: 95px;
+              width: 250px;
+              height: 460px;
+              border: 5px solid grey;
+            }
+            #player,#score{
+              padding-left: 10px;
+            }
+            #controls{
+              display: inline-block;
+              margin: 50px 0px;
+
+            }
+            #up, #down,#left,#right{
+              
+              width: 100%;
+              margin: 5px 0px;
+              height: 40px;
+              font: Arial;
+              font-weight: bold;
+              font-size: 50;
+            }
+            #up>input,#down>input{
+              width: 100px;
+              margin: 42% 68px;
+              height: 40px;
+              background: black;
+              color: grey;
+              opacity: 1;
+              border: 1px solid #333333;
+              font: Arial;
+              font-weight: bold;
+              font-size: 50;
+
+            }
+             #left>input{
+              width: 90px;
+              display: inline-block;
+              margin: 42% 15px;
+              height: 40px;
+              background: black;
+              color: grey;
+              opacity: 1;
+              border: 1px solid #333333;
+              font: Arial;
+              font-weight: bold;
+              font-size: 50;
+
+            }
+            #scoreboard>#controls{
+              background: #444444;
+              width: 100%;
+              height: 85%;
+            }
+
+        </style>
+    </head >
+    <body >
+           
+          <!--  <div id="score"><span>player1 score:</span> <div id="player1">0</div></div>
+           <div id="score"><span>player2 score:</span> <div id="player2">0</div></div> -->
+           <canvas id="canvas">
+               
+           </canvas>
+           <div id="scoreboard">
+             <div id="player">Player Score</div>
+             <div id="score">0</div>
+             <div id="controls">
+                  <div id="up"><input type="button" name="btn" value="up" onclick="turnUp()"></div>         
+                  <div id="left"><input type="button" name="btn" value="left" onclick="turnLeft()"><input type="button" name="btn" value="right" onclick="turnRight()"></div>
+                  <!-- <div id="right"></div> -->
+                  <div id="down"><input type="button" name="btn" value="down" onclick="turnDown()"></div>
+             </div>
+             
+           </div>
+           
+          
+
+           <script type="text/javascript" src="game.js"></script>
+    </body>
+</html>
